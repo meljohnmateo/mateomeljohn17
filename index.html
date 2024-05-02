@@ -100,23 +100,24 @@ button[type="submit"]:hover {
     </style>
 </head>
 <body>
-    <div class="container">
-        <form class="login-form" onsubmit="login(event)">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required value="meljohnmateo">
-            </div>
-            <div class="input-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required value="password">
-            </div>
-            <a href="create_account.html">
-            <p>create account</p> 
+   <div class="container">
+    <form class="login-form" onsubmit="login(event)">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <a href="createaccount.html">
+            <p>Create account</p> 
         </a>
-            <button type="submit">Log In</button>
-        </form>
-    </div>
+        <button type="submit">Log In</button>
+    </form>
+</div>
+
 
     <script>
         function login(event) {
