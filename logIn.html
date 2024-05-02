@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="icon" type="img/x-icon" href="img/logo-removebg-preview.png">
+
+    <style>
+
+/*Log in*/
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px; /* Double the max-width */
+    margin: 0 auto;
+    padding: 40px; /* Adjust padding as needed */
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the start (left) */
+}
+
+.login-form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    width: 40%; /* Adjust width as needed */
+    height: 50%;
+}
+.login-form {
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    transform: translate(-50%, -50%); /* Center the form */
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: skyblue;
+    color: #FFFFFF;
+    cursor: pointer;
+  
+}
+
+button[type="submit"]:hover {
+    background-color:darkblue;
+    opacity: 50%;
+}
+ .bgImg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 85%;
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" onsubmit="login(event)">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required value="meljohnmateo">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required value="password">
+            </div>
+            <a href="create_account.html">
+            <p>create account</p> 
+        </a>
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault(); 
+            
+         
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value; 
+          
+            if (username === "meljohnmateo" && password === "password") {
+                window.location.href = "oneEarth.html";
+                alert("Log in Successful! Click 'OK' to proceed");
+
+            } else {
+                alert("Incorrect username or password.");
+            }
+        }
+
+    </script>
+    <img src="img/earth-3d-uhd-8k-wallpaper.jpg" alt="forest" class="bgImg">
+</body>
+</html>

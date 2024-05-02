@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Cashier</title>
+     <link rel="icon" type="img/x-icon" href="img/logo-removebg-preview.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px; 
+        }
+        .container {
+            border: 5px solid #ccc; 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 700px;
+            border-color: seagreen;
+            
+        }
+        .item {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 10px;
+            padding: 10px; 
+            border: 2px solid #ddd; 
+            border-radius: 5px; 
+            border-color: darkgreen;
+            background: #728C69;
+            color: white;
+
+        }
+        .item label {
+            width: 120px;
+            margin-right: 10px; 
+            color: white;
+        }
+        #total {
+            font-weight: bold;
+            margin-top: 10px;
+             color: white;
+        }
+        #payment-info {
+            display: none;
+             color: white;
+
+        }
+        #payment-methods label {
+            display: block;
+            margin-bottom: 5px;
+             color: white;
+        }
+        .items{
+
+             width: 120px;
+            margin-right: 10px;
+             color: white;
+
+             .buttons{
+
+                background: black;
+                color: black;
+                width:auto;
+                height: auto;
+                padding: 20px;
+                top: 90%;
+                left: 10% ;
+             }
+
+
+
+        }
+    </style>
+
+  
+</head>
+<body>
+    <h1>Virtual Cashier</h1>
+    <div class="container"> 
+        <div class="item">
+            <label for="item1"><img src="img/spoonfork.png" alt="spoonfork" class="spoonfork-image" style="width: 60px; height: auto;"></label>
+           <p class="items">  Edible Spoon and Fork</p>
+            <input type="number" id="item1" value="0" min="0" step="1" onchange="calculateTotal()" style="width: auto; height: auto;">
+            <span class="price">P7.00 each</span>
+        </div>
+        <div class="item">
+            <label for="item2"><img src="img/cup.png" alt="spoonfork" class="spoonfork-image" style="width: 60px; height: auto;"></label>
+
+            <p class="items" > Peper cup</p>
+            <input type="number" id="item2" value="0" min="0" step="1" onchange="calculateTotal()">
+            <span class="price">P5.00 each</span>
+        </div>
+        <div class="item">
+            <label for="item3"><img src="img/straw.png" alt="spoonfork" class="spoonfork-image" style="width: 60px; height: auto;"></label>
+            <p class="items" > Paper Straw</p>
+            <input type="number" id="item3" value="0" min="0" step="1" onchange="calculateTotal()">
+            <span class="price">P1.00 each</span>
+        </div>
+        <div class="item">
+            <label for="item4"><img src="img/ecobag.png" alt="spoonfork" class="spoonfork-image" style="width: 60px; height: auto;"></label>
+            <p class="items">Eco bag</p>
+            <input type="number" id="item4" value="0" min="0" step="1" onchange="calculateTotal()">
+            <span class="price">P39.00 each</span>
+        </div>
+        <div class="item">
+            <label for="subtotal">Subtotal:</label>
+            <span id="subtotal">P0.00</span>
+        </div>
+        <div class="item" id="payment-info">
+            <label for="payment-methods">Select Payment Method:</label>
+            <select id="payment-methods">
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="cash">Cash on Delivery</option>
+            </select>
+            <button onclick="processPayment()">Proceed to Payment</button>
+        </div>
+        <div class="buttons">
+
+        <input type=button name="Button1" id="buttton1" value="<-- Home page" onclick="exit()">
+        </div>
+
+    </div>
+</div>
+    <script>
+        function calculateTotal() {
+            var item1 = parseInt(document.getElementById('item1').value) * 7;
+            var item2 = parseInt(document.getElementById('item2').value) * 5;
+            var item3 = parseInt(document.getElementById('item3').value) * 1;
+            var item4 = parseInt(document.getElementById('item4').value) * 39;
+
+            var subtotal = item1 + item2 + item3 + item4;
+            document.getElementById('subtotal').textContent = 'P' + subtotal.toFixed(2);
+            document.getElementById('payment-info').style.display = 'block'; 
+        }
+
+        function processPayment() {
+            var paymentMethod = document.getElementById('payment-methods').value;
+            var subtotal = parseFloat(document.getElementById('subtotal').textContent.replace('P', ''));
+            alert('Payment processed successfully!\nTotal amount: P' + subtotal.toFixed(2) + '\nPayment Method: ' + paymentMethod);
+        }
+        
+        function exit() {
+
+            location="oneEarth.html"
+        }
+    </script>
+
+  
+</body>
+</html>

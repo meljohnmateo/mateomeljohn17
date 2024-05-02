@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Earth</title>
+    <link rel="icon" type="image/x-icon" href="img/logo-removebg-preview.png">
+    <link rel="stylesheet" href="css.css">
+    <script src="javaScript.js"></script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Marketplace">Marketplace</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <div class="bbc-img">
+                <img src="img/BBC-New-Logo-removebg-preview.png" alt="bbc logo" class="custom-image">
+            </div>
+
+                 <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." value="">
+        <button type="button" onclick="search()">Search</button>
+    </div>
+                <p2 class="userName">@meljohnmateo</p2>
+                <li class="user-profile-icon" onclick="toggleUserProfileMenu()">
+                    <img src="img/vertor2-removebg-preview.png" alt="User Profile" class="user-profile-icon">
+                     <img src="img/giphy.gif" alt="arrow" class="user-profile-icon2">
+                    <div class="user-profile-menu" id="userProfileMenu">
+                        <ul>
+                            <li><span>@meljoh    nmateo</span></li>
+                            <li><a href="logIn.html">Switch account</a></li>
+                            <li><a href="logIn.html">Log out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <h1 class="boldtext1">Community funding:£5m lottery </h1>
+    <p class="lottery"> The National Lottery Community Fund is launching a £5m Sustainable <br>Community Buildings programme.The funds are issued for <br>improvements like solar panels, insulation and heat pumps.<br> The resulting savings could allow groups to put more of their <br>resources into their activities, <br>rather than paying increasing energy bills. </p>
+
+    <h1 class="boldtext2">fund offers energy grants</h1>
+    <h1 class="boldtext3">Campaigners gather on beach in</h1>
+    <h1 class="boldtext4">sewage protest</h1>
+    <h1 class="boldtext5">Leicester: Floods leave river <br> 'festooned'  with litter</h1>
+    <h1 class="boldtext6">Army explosives training caused <br>forest fire at Hampshire camp</h1>
+    <h1 class="boldtext7">Climate change: Polar bears face <br>starvation threat as ice melts</h1>
+    <h1 class="boldtext8"> World's Smallest Wild Dog | Dogs in the Wild: Meet The Family | BBC Earth
+</h1>
+
+    <div id="Marketplace"class="divider1">Marketplace</div>
+    <div class="divider2"></div>
+    <div class="slab"></div>
+    <div class="slab2">
+
+        <div id="about" >
+
+        <about>One Earth is dedicated to offering users an extensive array of immersive experiences via an interactive website that prioritizes accessibility and ease of navigation. Launched on February 16, 2024, by the esteemed multinational corporation MMM Inc., the official One Earth platform stands as a testament to our unwavering commitment to environmental stewardship. Our mission is rooted in the collective effort to preserve our planet's delicate ecological balance. We firmly believe that by fostering global collaboration and empowering individuals like you, we can effect meaningful change. Through a diverse range of engaging activities and initiatives, we strive to inspire and mobilize a community of like-minded individuals who share our vision for a sustainable future. At One Earth, we recognize the urgent need for collective action to address pressing environmental challenges. From promoting renewable energy adoption to advocating for wildlife conservation, our platform serves as a hub for impactful initiatives aimed at safeguarding our planet for future generations. By harnessing the power of technology and collaboration, we aim to cultivate a global network of changemakers committed to environmental conservation. Together, we can make a tangible difference in preserving the natural world and ensuring a prosperous future for all. Join us on this journey towards a more sustainable and resilient planet.</about>
+ <div class="toTop">
+
+         <li><a href="#searchInput">Home</a></li>
+     </div> 
+    </div>
+    </div>
+    <div class="slab3" >
+    <img src="img/Action_Urgent_-01-1024x1024.jpg" alt="Image 1">
+    <img src="img/Infograms2_1568996950910-HR.jpg" alt="Image 2">
+    <img src="img/d0e4d861071977.5a622d288e217.jpg" alt="Image 3">
+    <img src="img/C54D0960-CAD6-4DDF-B84A-84E99338EAD8.jpeg" alt="Image 4">
+    <img src="img/81dabf05-fd3f-4cfa-8c8e-5e4cb746fa52.jpg" alt="Image 5">
+
+    <img src="img/antartica.webp" alt="Image 5">
+     <img src="img/1131w-p-PeQrNNxZ4.webp" alt="Image 5">
+      <img src="img/Seven Worlds One Planet tile_592x888px.avif" alt="Image 5">
+       <img src="img/Product_Asset.avif" alt="Image 5">
+    </div>
+
+    <div id="mySidenav" class="navbar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a onclick="goToCashier()">Virtual Cashier</a>
+          <a href=#home>Home</a>
+          <a href=#marketplace>Marketplace</a>
+          <a href=#about>About</a>
+          <a href=#activities>Activities</a>
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+
+        <h1>One Earth</h1>
+          
+
+        <p1>Official Page</p1>
+
+        <div class="image-container">
+            <!-- Use relative paths to your images -->
+            <img src="img/logo.png" alt="logo" class="custom-image">
+           <a href="virtual_cashier.html">
+    <img src="img/marketplace2-removebg-preview.png" alt="Mlogo" class="marketplace-image">
+</a>
+            <img src="img/_132396749_gettyimages-1796122426.jpg.webp" alt="climate" class="solar-image">
+            <img src="img/a6456d50-b236-11ee-8ad1-0943f3b84718.jpg.webp" alt="climate" class="sea-image">
+            <img src="img/_132243959_riversoar.jpg.webp" alt="climate" class="flood-image">
+            <img src="img/polarbear.jpg" alt="climate" class="polar-image">
+            <img src="img/_130152456_mediaitem130152455.jpg.webp" alt="climate" class="forestFire-image"> 
+            <img src="img/spoonfork.png" alt="spoonfork" class="spoonfork-image">
+            <img src="img/cup.png" alt="cup" class="cup-image">
+            <img src="img/straw.png" alt="straw" class="straw-image">
+            <img src="img/ecobag.png" alt="bag" class="ecobag-image">
+
+        </div>
+        <p class="description1">Material and Sustainability: "EcoServe items: Sustainably sourced," </p>
+        <p class="description2">Material and Sustainability: "EcoServe items: Sustainably sourced," </p>
+        <p class="description3">Material and Sustainability: "EcoServe items: Sustainably sourced," </p>
+        <p class="description4">Material and Sustainability: "EcoServe items: Sustainably sourced," </p>
+    </div>
+
+    <div class="video-container">
+    <video autoplay muted loop controls> 
+        <source src="img/World_s_Smallest_Wild_Dog___Dogs_in_the_Wild__Meet_The_Family___BBC_Earth(720p).mp4" type="video/mp4">
+            Your browser does not support video tag.
+        </video>
+    </div>
+    <footer2>
+       About us
+    </footer2>
+     <footer>
+        @Developed and Programmed by Meljohn Mateo
+    </footer>
+    <div class="divider4" id="activities">Activities</div>
+    <button4 onclick="addToCart(4)">Add to cart</button4>
+    <p class="itemcount4"><span id="cartCount4">0</span></p>
+    <button3 onclick="addToCart(3)">Add to cart</button3>
+    <p class="itemcount3"><span id="cartCount3">0</span></p>
+    <button2 onclick="addToCart(2)">Add to cart</button2>
+    <p class="itemcount2"><span id="cartCount2">0</span></p>
+    <button1 onclick="addToCart(1)">Add to cart</button1>
+    <p class="itemcount1"><span id="cartCount1">0</span></p>
+    <p class="checkoutCount"><span id="totalItems" onclick="goToCashier">0</span></p>
+    <div class="news-container"> 
+        <div class="news-items"> 
+            <label>'Polar-bear capital' warms too fast for the bears</label>
+        </div>
+
+         <div class="news-items">
+            <label>Migrating species crucial to planet under threat</label>
+
+        </div>
+         <div class="news-items">
+            <label>World breaches 1.5C warming threshold for full year</label>
+        </div>
+    </div>
+   <div id="ads" class="advertisement">
+    <video autoplay muted loop controls> 
+        <source src="img/gma_network.mp4" type="video/mp4">
+        Your browser does not support video tag.
+    </video> 
+    <div class="skip">
+       <button id="skipButton" onclick="skipAd()">X</button>
+    </div>
+     
+    </div>
+</body>
+</html>
